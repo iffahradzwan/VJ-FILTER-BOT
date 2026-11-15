@@ -28,6 +28,7 @@ jobs:
           API_HASH: ${{ secrets.API_HASH }}
           ADMINS: ${{ secrets.ADMINS }}
           CHANNELS: ${{ secrets.CHANNELS }}
+          LOG_CHANNEL: ${{ secrets.LOG_CHANNEL }}
           DATABASE_URI: ${{ secrets.DATABASE_URI }}
         run: |
           timeout 21000 python3 bot.py || true
